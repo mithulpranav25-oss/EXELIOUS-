@@ -34,13 +34,13 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    background-color: var(--color-bg);
+    background-color: transparent;
 }
 
 body {
     font-family: var(--font-body);
     color: var(--color-text-main);
-    background-color: var(--color-bg);
+    background-color: transparent;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -141,7 +141,9 @@ hr.section-divider {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
     transition: var(--transition-smooth);
 }
@@ -252,7 +254,9 @@ hr.section-divider {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--color-bg);
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     z-index: 999;
     display: flex;
     align-items: center;
@@ -387,7 +391,9 @@ hr.section-divider {
 .workflow-canvas {
     width: 100%;
     max-width: 460px;
-    background-color: var(--color-bg);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
@@ -588,7 +594,9 @@ hr.section-divider {
 }
 
 .service-card {
-    background-color: var(--color-bg);
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     border-radius: 6px;
     padding: 3rem 2.5rem;
@@ -787,7 +795,9 @@ hr.section-divider {
 }
 
 .usecase-card {
-    background-color: var(--color-bg);
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     border-radius: 6px;
     padding: 2rem 2.25rem;
@@ -821,7 +831,9 @@ hr.section-divider {
 }
 
 .contact-card {
-    background-color: var(--color-bg-subtle);
+    background-color: rgba(249, 250, 251, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 6rem 4rem;
@@ -1195,4 +1207,74 @@ body.splash-active {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ==========================================================================
+   AURORA BACKGROUND ANIMATION & BLOBS
+   ========================================================================== */
+
+.bg-animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f9fafb 100%);
+}
+
+.bg-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.blob-1 {
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background-color: #f1f5f9; /* Soft cool slate */
+    animation: float-blob-1 25s infinite alternate ease-in-out;
+}
+
+.blob-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    background-color: #e2e8f0; /* Medium cool slate */
+    animation: float-blob-2 30s infinite alternate ease-in-out;
+}
+
+.blob-3 {
+    top: 40%;
+    left: 30%;
+    width: 45vw;
+    height: 45vw;
+    background-color: #cbd5e1; /* Darker cool slate */
+    animation: float-blob-3 20s infinite alternate ease-in-out;
+}
+
+@keyframes float-blob-1 {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(10vw, 15vh) scale(1.1); }
+    100% { transform: translate(-5vw, 5vh) scale(0.9); }
+}
+
+@keyframes float-blob-2 {
+    0% { transform: translate(0, 0) scale(1.1); }
+    50% { transform: translate(-15vw, -10vh) scale(0.9); }
+    100% { transform: translate(5vw, 5vh) scale(1); }
+}
+
+@keyframes float-blob-3 {
+    0% { transform: translate(0, 0) scale(0.9); }
+    50% { transform: translate(8vw, -12vh) scale(1.1); }
+    100% { transform: translate(-10vw, 8vh) scale(0.95); }
 }
