@@ -857,6 +857,11 @@ hr.section-divider {
 }
 
 .contact-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 
@@ -957,7 +962,13 @@ hr.section-divider {
     color: var(--color-text-heading);
 }
 
-.footer-phone:hover {
+.footer-email, .footer-instagram {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.footer-phone:hover, .footer-email:hover, .footer-instagram:hover {
     color: var(--color-text-muted);
 }
 
