@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXELIOUS | Custom AI Agents & Digital Product Execution</title>
+    <meta name="description" content="EXELIOUS builds custom AI automation systems, AI SaaS platforms, internal tools, mobile/web apps, and landing pages with a focus on practical execution.">
+    
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Intro Splash Screen -->
+    <div class="splash-screen" id="splash-screen">
+        <div class="splash-content">
+            <img src="assets/exelious-logo.png" alt="EXELIOUS Logo" class="splash-logo" id="splash-logo-img">
+            <h1 class="splash-title" id="splash-logo-title">
+                <span class="splash-word">WELCOME</span>
+                <span class="splash-word">TO</span>
+                <span class="splash-word">EXELIOUS</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-link" id="nav-logo-link">
+                <img src="assets/exelious-logo.png" alt="EXELIOUS" class="logo-img" id="nav-logo-img">
+                <span class="logo-text">EXELIOUS</span>
+            </a>
+            
+            <nav class="nav-links" id="main-nav-links">
+                <a href="#home" class="nav-item active" id="nav-link-home">Home</a>
+                <a href="#services" class="nav-item" id="nav-link-services">Services</a>
+                <a href="#process" class="nav-item" id="nav-link-process">Process</a>
+                <a href="#contact" class="nav-item" id="nav-link-contact">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="tel:8122412203" class="btn btn-primary btn-sm" id="nav-cta-call">Call Now</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-item" id="mob-link-home">Home</a>
+            <a href="#services" class="mobile-nav-item" id="mob-link-services">Services</a>
+            <a href="#process" class="mobile-nav-item" id="mob-link-process">Process</a>
+            <a href="#contact" class="mobile-nav-item" id="mob-link-contact">Contact</a>
+            <a href="tel:8122412203" class="btn btn-primary" id="mob-cta-call">Call Now</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="brand-badge-container">
+                        <img src="assets/exelious-logo.png" alt="EXELIOUS Emblem" class="hero-badge-logo" id="hero-badge-img">
+                        <span class="brand-badge-text">EXELIOUS AI</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Custom AI Agents for Real Business Workflows</h1>
+                    
+                    <p class="hero-description">
+                        EXELIOUS builds AI automation systems, AI SaaS platforms, internal tools, web and mobile apps, landing pages, and creative digital assets for modern businesses.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="tel:8122412203" class="btn btn-primary" id="hero-cta-call">Call Now</a>
+                        <a href="#services" class="btn btn-secondary" id="hero-cta-services">See Services</a>
+                    </div>
+                    
+                    <div class="hero-subtext">
+                        <span class="dot-indicator"></span>
+                        Direct execution: <a href="tel:8122412203" class="phone-link" id="hero-phone-link">8122412203</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal">
+                    <!-- Premium AI Agent Workflow Canvas Visual -->
+                    <div class="workflow-canvas">
+                        <div class="workflow-header">
+                            <span class="workflow-dot red"></span>
+                            <span class="workflow-dot yellow"></span>
+                            <span class="workflow-dot green"></span>
+                            <span class="workflow-title">exelious-agent-orchestrator.yaml</span>
+                        </div>
+                        <div class="workflow-body">
+                            <!-- Node 1: Input -->
+                            <div class="workflow-node node-input" id="wf-node-1">
+                                <div class="node-type">TRIGGER</div>
+                                <div class="node-label">Customer Query / Webhook</div>
+                                <div class="node-status">Active</div>
+                            </div>
+                            
+                            <!-- Connecting Line 1 -->
+                            <div class="workflow-connector line-1">
+                                <div class="pulse-dot"></div>
+                            </div>
+                            
+                            <!-- Node 2: Agent Engine -->
+                            <div class="workflow-node node-engine" id="wf-node-2">
+                                <div class="node-type">AGENT ROUTER</div>
+                                <div class="node-label">EXELIOUS Shield Engine</div>
+                                <div class="node-status processing">Processing</div>
+                            </div>
+                            
+                            <!-- Connecting Line 2 -->
+                            <div class="workflow-connector line-2">
+                                <div class="pulse-dot"></div>
+                            </div>
+                            
+                            <!-- Sub-branches Grid -->
+                            <div class="workflow-branches">
+                                <div class="workflow-branch-node" id="wf-branch-1">
+                                    <div class="branch-label">CRM Automation</div>
+                                    <span class="status-indicator success"></span>
+                                </div>
+                                <div class="workflow-branch-node" id="wf-branch-2">
+                                    <div class="branch-label">Database Sync</div>
+                                    <span class="status-indicator success"></span>
+                                </div>
+                                <div class="workflow-branch-node" id="wf-branch-3">
+                                    <div class="branch-label">SaaS API Call</div>
+                                    <span class="status-indicator success"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <hr class="section-divider">
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">WHAT WE BUILD</span>
+                    <h2 class="section-title">Practical digital capabilities for scaling operations</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card reveal" id="service-card-automation">
+                        <div class="card-num">01</div>
+                        <h3 class="card-title">AI Automation</h3>
+                        <p class="card-desc">Automate repetitive workflows, tasks, and operations with custom AI-driven systems.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-card reveal" id="service-card-saas">
+                        <div class="card-num">02</div>
+                        <h3 class="card-title">AI SaaS Platforms</h3>
+                        <p class="card-desc">Build AI-powered software products designed for real users and scalable business growth.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-card reveal" id="service-card-tools">
+                        <div class="card-num">03</div>
+                        <h3 class="card-title">Internal Tools</h3>
+                        <p class="card-desc">Create internal systems that improve reporting, operations, and team productivity.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="service-card reveal" id="service-card-apps">
+                        <div class="card-num">04</div>
+                        <h3 class="card-title">Web and Mobile Apps</h3>
+                        <p class="card-desc">Design and develop customer-facing and internal digital products for modern businesses.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="service-card reveal" id="service-card-video">
+                        <div class="card-num">05</div>
+                        <h3 class="card-title">Video Editing</h3>
+                        <p class="card-desc">Create polished video assets for business content, promotions, and brand communication.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="service-card reveal" id="service-card-landing">
+                        <div class="card-num">06</div>
+                        <h3 class="card-title">Landing Pages</h3>
+                        <p class="card-desc">Design focused, conversion-ready landing pages for products, services, and campaigns.</p>
+                        <div class="card-footer-link">Explore service &rarr;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <hr class="section-divider">
+
+        <!-- Why EXELIOUS Section -->
+        <section class="why-section" id="why">
+            <div class="container why-grid">
+                <div class="why-intro reveal">
+                    <span class="section-subtitle">THE EXELIOUS WAY</span>
+                    <h2 class="section-title">Built for Real Execution</h2>
+                    <p class="why-lead-text">
+                        We don't offer generic blueprints or hype. We design, code, and deploy custom solutions that yield concrete improvements in your business operations.
+                    </p>
+                </div>
+                
+                <div class="why-points reveal">
+                    <!-- Point 1 -->
+                    <div class="why-point-item" id="why-point-1">
+                        <div class="why-point-num">01</div>
+                        <div class="why-point-content">
+                            <h4 class="why-point-title">Custom-built solutions</h4>
+                            <p class="why-point-desc">Engineered exactly for your existing systems, workflows, and business goals.</p>
+                        </div>
+                    </div>
+                    <!-- Point 2 -->
+                    <div class="why-point-item" id="why-point-2">
+                        <div class="why-point-num">02</div>
+                        <div class="why-point-content">
+                            <h4 class="why-point-title">Practical execution</h4>
+                            <p class="why-point-desc">We prioritize operational viability over theoretical complexity. Real software, working agents.</p>
+                        </div>
+                    </div>
+                    <!-- Point 3 -->
+                    <div class="why-point-item" id="why-point-3">
+                        <div class="why-point-num">03</div>
+                        <div class="why-point-content">
+                            <h4 class="why-point-title">Startup-friendly and business-focused</h4>
+                            <p class="why-point-desc">Built to adapt to market changes. High velocity, zero bureaucratic drag.</p>
+                        </div>
+                    </div>
+                    <!-- Point 4 -->
+                    <div class="why-point-item" id="why-point-4">
+                        <div class="why-point-num">04</div>
+                        <div class="why-point-content">
+                            <h4 class="why-point-title">Modern product thinking</h4>
+                            <p class="why-point-desc">Every line of code is designed to support UX, business scaling, and maintainability.</p>
+                        </div>
+                    </div>
+                    <!-- Point 5 -->
+                    <div class="why-point-item" id="why-point-5">
+                        <div class="why-point-num">05</div>
+                        <div class="why-point-content">
+                            <h4 class="why-point-title">Clear delivery from idea to launch</h4>
+                            <p class="why-point-desc">Full visibility from initial concept definition to production deployment and monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <hr class="section-divider">
+
+        <!-- Process Section -->
+        <section class="process-section" id="process">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">METHODOLOGY</span>
+                    <h2 class="section-title">How We Move Fast</h2>
+                </div>
+                
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step reveal" id="process-step-1">
+                        <div class="step-badge">Phase 01</div>
+                        <h3 class="step-title">Understand</h3>
+                        <p class="step-desc">We understand your business problem, goals, and workflow needs.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step reveal" id="process-step-2">
+                        <div class="step-badge">Phase 02</div>
+                        <h3 class="step-title">Build</h3>
+                        <p class="step-desc">We design and build the right system, product, or digital asset for your use case.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step reveal" id="process-step-3">
+                        <div class="step-badge">Phase 03</div>
+                        <h3 class="step-title">Launch</h3>
+                        <p class="step-desc">We help you launch, improve, and move faster with practical execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <hr class="section-divider">
+
+        <!-- Use Cases Section -->
+        <section class="usecases-section" id="use-cases">
+            <div class="container usecases-grid">
+                <div class="usecases-info reveal">
+                    <span class="section-subtitle">CAPABILITIES</span>
+                    <h2 class="section-title">When to hire EXELIOUS</h2>
+                    <p class="usecases-lead-text">
+                        Partner with us to add execution capabilities to your team. We serve as your flexible tech team, building tools that solve immediate challenges.
+                    </p>
+                </div>
+                
+                <div class="usecases-list reveal">
+                    <!-- Case 1 -->
+                    <div class="usecase-card" id="usecase-card-1">
+                        <h4 class="usecase-title">Automating business operations</h4>
+                        <p class="usecase-desc">Replace manual workflows with self-healing, automated scripts and intelligent AI agent routing.</p>
+                    </div>
+                    <!-- Case 2 -->
+                    <div class="usecase-card" id="usecase-card-2">
+                        <h4 class="usecase-title">Building AI-powered software products</h4>
+                        <p class="usecase-desc">Launch complex SaaS architectures that leverage large language models to add intelligence to user interfaces.</p>
+                    </div>
+                    <!-- Case 3 -->
+                    <div class="usecase-card" id="usecase-card-3">
+                        <h4 class="usecase-title">Creating internal tools for teams</h4>
+                        <p class="usecase-desc">Empower your crew with clean databases, unified administration dashboards, and rapid reporting views.</p>
+                    </div>
+                    <!-- Case 4 -->
+                    <div class="usecase-card" id="usecase-card-4">
+                        <h4 class="usecase-title">Launching websites and apps</h4>
+                        <p class="usecase-desc">Deploy responsive Web/Mobile client systems built with modern frameworks and highly responsive styling.</p>
+                    </div>
+                    <!-- Case 5 -->
+                    <div class="usecase-card" id="usecase-card-5">
+                        <h4 class="usecase-title">Producing content and landing pages for growth</h4>
+                        <p class="usecase-desc">Create polished video assets and high-conversion landing pages to funnel and convert customers effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <hr class="section-divider">
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card reveal" id="main-contact-card">
+                    <span class="contact-subtitle">LET'S CONNECT</span>
+                    <h2 class="contact-title">Let’s build something useful</h2>
+                    <p class="contact-desc">
+                        Call EXELIOUS to discuss your business, idea, or project and get the right digital solution for your needs.
+                    </p>
+                    
+                    <div class="contact-actions">
+                        <a href="tel:8122412203" class="btn btn-primary btn-lg btn-phone-cta" id="contact-cta-call">
+                            Call 8122412203
+                        </a>
+                    </div>
+                    
+                    <div class="contact-info-footer">
+                        <span>Direct line available Monday – Friday</span>
+                        <span class="divider-dot"></span>
+                        <span>No sales pitch, direct technical discussion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo-link" id="footer-logo-link">
+                    <img src="assets/exelious-logo.png" alt="EXELIOUS" class="footer-logo-img" id="footer-logo-img">
+                    <span class="footer-logo-text">EXELIOUS</span>
+                </a>
+                <p class="footer-tagline">
+                    Custom AI agents and digital solutions for modern businesses.
+                </p>
+            </div>
+            
+            <div class="footer-meta">
+                <div class="footer-contact-info">
+                    <span class="meta-label">Contact</span>
+                    <a href="tel:8122412203" class="footer-phone" id="footer-phone-link">8122412203</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2026 EXELIOUS. All rights reserved. Built for execution.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
